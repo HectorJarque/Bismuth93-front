@@ -1,0 +1,65 @@
+# Node dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Electron
+release/
+app/dist/
+*.asar
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cache
+.cache/
+.parcel-cache/
+.vite/
+.next/
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# Testing
+test-results/
+playwright-report/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Temporary files
+*.tmp
+*.swp
+
+# Electron Forge / Builder
+.out/
+dist-electron/
+
+# Mac / Windows artifacts
+*.exe
+*.dmg
+*.AppImage
+*.snap

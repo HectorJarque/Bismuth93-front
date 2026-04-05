@@ -1,7 +1,7 @@
 {
-  "name": "noteflow",
+  "name": "bismuth93",
   "version": "1.0.0",
-  "description": "NoteFlow - Local-first note taking app",
+  "description": "Bismuth93 - Local-first note taking app",
   "main": "./out/main/index.js",
   "scripts": {
     "dev": "electron-vite dev",
@@ -14,9 +14,9 @@
     "typecheck": "npm run typecheck:node && npm run typecheck:web"
   },
   "build": {
-    "appId": "com.noteflow.app",
-    "productName": "NoteFlow",
-    "copyright": "Copyright © 2024",
+    "appId": "com.bismuth93.app",
+    "productName": "Bismuth93",
+    "copyright": "Copyright © 2026",
     "win": {
       "target": [{ "target": "nsis", "arch": ["x64"] }],
       "icon": "resources/icon.ico"
@@ -31,8 +31,8 @@
     },
     "extraResources": [
       {
-        "from": "../backend/build/libs/noteflow-backend-all.jar",
-        "to": "backend/noteflow-backend.jar"
+        "from": "../backend/build/libs/bismuth93-backend-all.jar",
+        "to": "backend/bismuth93-backend.jar"
       }
     ],
     "directories": {

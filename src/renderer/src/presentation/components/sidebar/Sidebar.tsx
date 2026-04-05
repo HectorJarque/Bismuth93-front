@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useAppStore } from '../../store/appStore'
 import { NotebookList } from './NotebookList'
 import { NoteList } from './NoteList'
 import { SearchBar } from './SearchBar'
 import { Button } from '../ui/Button'
-import { PenLine, Settings, Sun, Moon, PanelLeftClose } from 'lucide-react'
+import { PenLine, Sun, Moon, PanelLeftClose } from 'lucide-react'
 
 export function Sidebar() {
   const { createNote, activeNotebookId, isSidebarOpen, toggleSidebar, theme, toggleTheme } = useAppStore()
@@ -24,7 +24,7 @@ export function Sidebar() {
       {/* Header */}
       <div className="flex items-center justify-between px-3 pt-2 pb-1" style={{ WebkitAppRegion: 'drag' } as any}>
         <span className="font-bold text-sm text-[var(--text-primary)] tracking-wide flex items-center gap-1.5">
-          <span className="text-base">📝</span> NoteFlow
+          <span className="text-base">📝</span> Bismuth93
         </span>
         <div className="flex items-center gap-0.5" style={{ WebkitAppRegion: 'no-drag' } as any}>
           <Button size="sm" icon={theme === 'dark' ? <Sun size={13} /> : <Moon size={13} />} onClick={toggleTheme} title="Toggle theme" />

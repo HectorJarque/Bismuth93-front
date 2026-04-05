@@ -7,9 +7,9 @@ let backendProcess: ChildProcess | null = null
 let mainWindow: BrowserWindow | null = null
 
 function startBackend(): void {
-  const jarPath = existsSync(join(process.resourcesPath, 'backend/noteflow-backend.jar'))
-    ? join(process.resourcesPath, 'backend/noteflow-backend.jar')
-    : join(__dirname, '../../backend/build/libs/noteflow-backend-all.jar')
+  const jarPath = existsSync(join(process.resourcesPath, 'backend/bismuth93-backend.jar'))
+    ? join(process.resourcesPath, 'backend/bismuth93-backend.jar')
+    : join(__dirname, '../../backend/build/libs/bismuth93-backend-all.jar')
 
   if (!existsSync(jarPath)) {
     console.warn('⚠️  Backend JAR not found, assuming it is running externally on port 8765')

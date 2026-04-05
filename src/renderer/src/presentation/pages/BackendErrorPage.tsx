@@ -8,7 +8,7 @@ export function BackendErrorPage({ onRetry }: Props) {
       <span className="text-5xl">⚠️</span>
       <h2 className="text-lg font-semibold">Cannot connect to backend</h2>
       <p className="text-sm text-[var(--text-muted)] text-center max-w-xs">
-        NoteFlow needs a local Java backend running on port 8765.
+        Bismuth93 needs a local Java backend running on port 8765.
         Make sure Java 17+ is installed and the backend started.
       </p>
       <button

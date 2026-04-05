@@ -25,7 +25,7 @@ export function App() {
       <div className="h-full flex items-center justify-center bg-[#1e1e2e]">
         <div className="flex flex-col items-center gap-3">
           <span className="text-4xl animate-pulse">📝</span>
-          <p className="text-sm text-[#a6adc8]">Starting NoteFlow…</p>
+          <p className="text-sm text-[#a6adc8]">Starting bismuth93…</p>
         </div>
       </div>
     )

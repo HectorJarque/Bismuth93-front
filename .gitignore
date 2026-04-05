@@ -1,15 +1,11 @@
-# Node dependencies
+# Node modules
 node_modules/
 
 # Build outputs
 dist/
-build/
+dist-electron/
 out/
-
-# Electron
-release/
-app/dist/
-*.asar
+build/
 
 # Logs
 logs/
@@ -19,47 +15,48 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Cache
+.cache/
+.vite/
+*.tsbuildinfo
+
 # Environment variables
 .env
 .env.*
 !.env.example
 
-# Cache
-.cache/
-.parcel-cache/
-.vite/
-.next/
-.eslintcache
-
-# TypeScript
-*.tsbuildinfo
-
-# Coverage
-coverage/
-
-# Testing
-test-results/
-playwright-report/
-
 # OS files
 .DS_Store
 Thumbs.db
 
-# IDEs
-.vscode/
+# IDE (IntelliJ / WebStorm)
 .idea/
 *.iml
 
-# Temporary files
-*.tmp
-*.swp
+# IntelliJ específicos que cambian mucho
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/discord.xml
 
-# Electron Forge / Builder
-.out/
-dist-electron/
+# TypeScript
+*.tsbuildinfo
 
-# Mac / Windows artifacts
+# Electron
+*.asar
 *.exe
 *.dmg
 *.AppImage
-*.snap
+
+# Coverage
+coverage/
+
+# Tailwind / PostCSS cache
+.postcss-cache/
+
+# Archivos temporales
+*.tmp
+*.swp
+*~
+
+# Recursos generados (opcional según uso)
+resources/*.log

@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import { useAppStore } from '../../store/appStore'
-import { Attachment } from '../../../domain/Attachment'
-import { Button } from '../ui/Button'
 import { Trash2, ExternalLink, FileText, Image, Film, Music, X } from 'lucide-react'
 
 function fileIcon(mimeType: string) {
